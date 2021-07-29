@@ -13,15 +13,19 @@ Steps followed:
 $ git clone <Github URL>
 
 3. Create the Pods and Services.
+$ kubectl create -f postgres-pod.yml
+$ kubectl create -f redis-service.yml
+$ kubectl create -f result-app-service.yml
+$ kubectl create -f voting-app-service.yml
+$ kubectl create -f postgres-service.yml
+$ kubectl create -f redis-pod.yml
+$ kubectl create -f result-app-pod.yml
 $ kubectl create -f voting-app-pod.yml
-$ kubectl create -f voting-app-pod.yml
-$ kubectl create -f voting-app-pod.yml
-$ kubectl create -f voting-app-pod.yml
-$ kubectl create -f voting-app-pod.yml
-$ kubectl create -f voting-app-pod.yml
-$ kubectl create -f voting-app-pod.yml
-$ kubectl create -f voting-app-pod.yml
-$ kubectl create -f voting-app-pod.yml
+$ kubectl create -f worker-app-pod.yml
+
+4. Checkout the Pods and Services created.
+$ kubectl get pods
+$ kubectl get services
 
 4. Access the app interface by cicking on link or opening the URL and checkout the app functioning.
 
